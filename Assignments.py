@@ -166,14 +166,82 @@
 #     print(x)        
 
 
+"""dictionary with the number as the key and its square as the value (dict comprehension)"""
+# numbers = [1, 2, 3, 4, 5]
+# result = {n: n*n for n in numbers}
+# print(result)
+
+
+"""a sentence and outputs the words in alphabetical order"""
+# sentence = input("Enter a sentence: ")
+# words = sentence.split()
+# words.sort()    
+# print(words)
+
+
+"""merge two dictionaries into one"""
+# dict1 = {"a": 1, "b": 2}
+# dict2 = {"c": 3, "d": 4}
+# dict1.update(dict2)
+# print(dict1)
+
+
+"""counts how many times each vowel appears in a given string"""
+# text = "Python is easy"
+# text = text.lower()
+# vowels = "aeiou"
+# for vowel in vowels:
+#     count = text.count(vowel)
+#     print(vowel, ":", count)
+
+
+"""if a given string is a palindrome (case-insensitive)"""
+# text = "madam"
+# text = text.replace(" ", "")
+# if text == text[::-1]:
+#     print("Pallindrome")
+# else:    
+#     print("Not a pallindrome")
 
 
 
 
+"""Mini project"""
+###"""Basic Calculator"""
+
+# while True:
+#     print("Enter operation (+, -, *, /) or 'exit' to quit:")
+#     op = input()
+#     if op == "exit":
+#         break
+#     num1 = float(input("Enter first number: "))
+#     num2 = float(input("Enter second number: "))
+#     if op == "+":
+#         print("Result:", num1 + num2)
+#     elif op == "-":
+#         print("Result:", num1 - num2)
+#     elif op == "*":
+#         print("Result:", num1 * num2)
+#     elif op == "/":
+#         if num2 != 0:
+#             print("Result:", num1 / num2)
+#         else:
+#             print("Cannot divide by zero")
+#     else:
+#         print("Invalid operation")                        
 
 
-
-
+###"""tores marks in a dictionary, calculates average, shows top scorer"""
+students = {
+    "Fathima": [80, 90, 85],
+    "Aysha": [70, 75, 80],
+    "Meharin": [90, 95, 92]
+}
+for name, marks in students.items():
+    avg = sum(marks)/len(marks)
+    print(f"{name} - average: {avg}")
+top_student = max(students, key=lambda x: sum(students[x]))
+print("Top student:", top_student)    
 
 
 
