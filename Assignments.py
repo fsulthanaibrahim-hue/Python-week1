@@ -232,16 +232,58 @@
 
 
 ###"""tores marks in a dictionary, calculates average, shows top scorer"""
-students = {
-    "Fathima": [80, 90, 85],
-    "Aysha": [70, 75, 80],
-    "Meharin": [90, 95, 92]
-}
-for name, marks in students.items():
-    avg = sum(marks)/len(marks)
-    print(f"{name} - average: {avg}")
-top_student = max(students, key=lambda x: sum(students[x]))
-print("Top student:", top_student)    
+# students = {
+#     "Fathima": [80, 90, 85],
+#     "Aysha": [70, 75, 80],
+#     "Meharin": [90, 95, 92]
+# }
+# for name, marks in students.items():
+#     avg = sum(marks)/len(marks)
+#     print(f"{name} - average: {avg}")
+# top_student = max(students, key=lambda x: sum(students[x]))
+# print("Top student:", top_student)    
+
+
+
+"""class BankAccount with deposit and withdraw methods and a balance attribute"""
+# class BankAccount:
+#     def __init__(self, balance=0):
+#         self.balance = balance
+
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print("Deposited:", amount)
+#         print("Balance:", self.balance)
+
+#     def withdraw(self, amount):
+#         if amount <= self.balance:
+#             self.balance -= amount
+#             print("Withdrawn:", amount)
+#             print("Balance:", self.balance)
+#         else:
+#             print("Insufficient balance")    
+# account = BankAccount(1000)
+# account.deposit(500)
+# account.withdraw(300)
+# account.withdraw(1500)
+
+
+"""class Animal and inherit it in class Dog, overriding a method"""
+# class Animal:
+#     def speak(self):
+#         print("Animal makes a sound")
+# class Dog(Animal):
+#     def speak(self):
+#         print("Dog barks")
+# a = Animal()
+# a.speak()
+# d = Dog()
+# d.speak()                
+ 
+
+
+
+
 
 
 
